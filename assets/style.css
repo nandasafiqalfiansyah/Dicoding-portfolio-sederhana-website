@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+header {
+  display: inline;
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+.judul {
+  background-color: #0e2431;
+  text-align: left;
+  padding: 1px;
+  color: white;
+}
+.judul h1 {
+  font-size: 60;
+  text-align: center;
+}
+
+/*navigasi bar*/
+
+nav {
+  background-color: #0e2431;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  font-weight: bold;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0px 10px;
+}
+.logo {
+  background-image: url("../image/profile.png");
+  width: 40px;
+  margin: 10px 30px;
+  height: 40px;
+  background-size: 40px 40px;
+  border: solid 2px #666;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.logo-txt {
+  color: #fff;
+  margin: -55px 80px;
+}
+nav .navbar-left {
+  float: left;
+}
+nav .navbar-right {
+  float: right;
+  padding-right: 100px;
+}
+
+/* home section styling */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("image/background.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one {
+  font-size: 25px;
+  color: #fff;
+}
+.home .text-two {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #00a2c6;
+  animation: typing 5s steps(15) infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #1de2d1;
+  border-color: #black;
+}
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #fff;
+}
+.home .button {
+  margin: 14px 0;
+}
+.home .button button {
+  outline: none;
+  margin: 0 0px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
+}
+.home .button button:hover {
+  transform: scale(0.97);
+}
+
+/* About Section Styling */
+
+article {
+  padding-top: 40px;
+}
+
+.about .about-details {
+  justify-content: space-between;
+  align-items: center;
+}
+article .title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #00a2c6;
+}
+article .title span {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+article .topic {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+article p {
+  text-align: justify;
+}
+
+article .button {
+  margin: 30px -1px 10px 0;
+}
+article .button button {
+  ooutline: none;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #3e8da8 10%, #c346c2 100%);
+}
+article .button button:hover {
+  transform: scale(0.97);
+}
+article .button button a {
+  outline: none;
+  margin: 0 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #3e8da8 10%, #c346c2 100%);
+}
+article .button button a:hover {
+  transform: scale(0.97);
+}
+
+/* My Skills CSS */
+.skills {
+  background: var(--body-color);
+}
+.skills .content {
+  padding: 40px 0;
+}
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-details p {
+  text-align: justify;
+}
+
+.skills-details .boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+  margin: 10px 3px;
+}
+.skills-details .boxes .topic {
+  font-size: 20px;
+  color: #3e8da8;
+}
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: #3e8da8;
+}
+
+/* Contact Me CSS */
+
+.contact .content {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.texts {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.texts p {
+  text-align: center;
+  margin: auto;
+}
+
+/*profil bawah*/
+.profile header {
+  text-align: center;
+}
+.profile img {
+  width: 200px;
+  border-radius: 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.card-profil {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.profil-depan {
+  text-align: left;
+  padding-right: 20px;
+}
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: o;
+  }
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #0e2431;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Scroll TO Top Button CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0e2431;
+  border-radius: 10px;
+}
+
+/*responsif navigasi*/
