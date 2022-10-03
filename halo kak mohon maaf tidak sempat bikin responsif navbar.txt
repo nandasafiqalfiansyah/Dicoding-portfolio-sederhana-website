@@ -1,3 +1,0 @@
-nama: nanda safiq alfiansyah
-
-mohon maaf jika navbar nya kurang responsif tapi yang lain sangat responsif
