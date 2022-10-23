@@ -2,4 +2,4 @@
 website portfolio sederhana yang saya buat untuk menyelesaikan tugas akhir dicoding kelas Belajar Dasar Pemrograman Web
 
 
-[LIVE website]()
+<[LIVE WEBSITE](https://nandasafiqalfiansyah.github.io/Dicoding-portfolio-sederhana-website/)>
